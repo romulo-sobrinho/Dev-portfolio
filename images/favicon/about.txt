@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Liu Jian Mao Cao
+- Font Author: Copyright 2018 The Liu Jian Mao Cao Project Authors (https://www.github.com/googlefonts/liujianmaocao)
+- Font Source: http://fonts.gstatic.com/s/liujianmaocao/v13/~ChIKEExpdSBKaWFuIE1hbyBDYW8gACoECAEYAQ==.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

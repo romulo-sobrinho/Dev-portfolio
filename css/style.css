@@ -1,0 +1,274 @@
+:root {
+  --color-primary: #1f95fd;
+  --color-secondary: #4fe8e4;
+  --color-tertiary: #95989a;
+  --color-quaternary: #e3e3e3;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #5d5d5d;
+  --background-dark-primary: #31333b;
+  --background-dark-primary2: #313131;
+  --background-dark-secondary: #3d3e42;
+  --background-dark-secondary2: #3d3d3d;
+  --gradient-primary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
+  --box-shadow: 10px 10px 25px 1px #C0C5CE;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+/* Header */
+#img-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(26, 26, 26);
+  overflow: hidden;
+}
+
+#img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) opacity(0.7);
+  animation: decrease 8s;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  transition: all 0.5s;
+  background-color: var(--color-white);
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+.navigation img {
+  width: 50px;
+  animation: spin 1s;
+}
+
+.navigation img:hover {
+  animation: spin 1s;
+}
+
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6em;
+  background-color: var(--color-white);
+  transition: 0.3s;
+  padding: 2em 0;
+}
+
+/* Criando animação de sumir e aparecer adicionando a classe pelo javascript */
+.nav-menu.active {
+  right: 0;
+}
+
+.nav-menu li {}
+
+.nav-menu a {
+  color: var(--color-back);
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.nav-menu a:hover {
+  color: var(--color-primary);
+}
+
+.menu-hamburger {
+  cursor: pointer;
+  display: block;
+}
+
+/* Criando animação de girar adicionando a classe pelo javascript */
+.menu-hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-hamburger .bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--color-black);
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.banner {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  color: var(--color-white);
+  border: 1px solid red;
+}
+
+.banner h1 {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.banner h1 span {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-primary);
+}
+
+.banner p {
+  margin-bottom: 0.5em;
+}
+
+.banner button {
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 3px solid var(--color-primary);
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.5s;
+}
+
+/* .banner button {
+  padding: 12px 36px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px 0 rgba(252, 71, 31, 0.3);
+  background: var(--color-primary);
+  color: var(--color-white);
+  letter-spacing: 2px;
+  text-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.5s;
+} */
+
+.banner button:hover {
+  /*background: var(--background-color-btn-hover);*/
+  box-shadow: 1px 2px 5px var(--color-secondary);
+  animation: botaoPiscar 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--color-white);
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+#footer img {
+  width: 70px;
+}
+
+
+@keyframes decrease {
+  0% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* Header */
+  .navigation {
+    justify-content: space-between;
+    padding: 1em 4em;
+  }
+
+  .nav-menu {
+    background-color: none;
+    position: static;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  /* Footer */
+  #footer img {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Header */
+  .nav-menu a {
+    letter-spacing: 1.5px;
+  }
+
+  /* Footer */
+  #footer img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* Header */
+  .nav-menu {
+    gap: 4em;
+  }
+}
