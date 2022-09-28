@@ -1,4 +1,4 @@
-![front-end developer logo](https://user-images.githubusercontent.com/68918326/192657225-1d8069c0-808a-4853-b131-d2122cd94bfd.PNG)
+![front-end developer logo](https://user-images.githubusercontent.com/68918326/192667351-4f4bc6f3-7b7e-40f2-b7dc-c62095b3078d.PNG)
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>
@@ -33,8 +33,7 @@
     
 ## Preview
 
-
-![portifólio](https://user-images.githubusercontent.com/68918326/156904839-4a6ae9f1-f265-4b19-a7c2-77ced4df38f4.PNG)
+![Portfolio](https://user-images.githubusercontent.com/68918326/192667202-669a3ebd-d7d9-4433-af7a-28ebd2cdaf38.PNG)
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>

@@ -1,3 +1,15 @@
+/*Ubuntu*/
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Ubuntu Mono */
+/* font-family: 'Ubuntu Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Merriweather Sans*/
+/* font-family: 'Merriweather Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 :root {
   --color-primary: #1f95fd;
   --color-secondary: #4fe8e4;
@@ -29,7 +41,7 @@
 #img-wrapper {
   width: 100%;
   height: 100vh;
-  background-color: rgb(26, 26, 26);
+  background: linear-gradient(90deg, #000000 0%, #000000 40%, rgb(255, 255, 255) 100%);
   overflow: hidden;
 }
 
@@ -133,25 +145,23 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1em;
+  gap: 1.5em;
   color: var(--color-white);
-  border: 1px solid red;
 }
 
 .banner h1 {
-  font-size: 0.8em;
-  font-weight: normal;
-}
-
-.banner h1 span {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  color: var(--color-primary);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: var(--color-white);
+  text-shadow: 0.3rem 0.4rem 3px rgba(0, 0, 0, 0.4);
 }
 
 .banner p {
-  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 0.1rem 0.2rem 4px rgba(0, 0, 0, 0.4);
 }
 
 .banner button {
@@ -159,31 +169,21 @@
   border-radius: var(--border-radius);
   background-color: transparent;
   color: var(--color-primary);
+  cursor: pointer;
   border: 3px solid var(--color-primary);
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 2px;
   text-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.5s;
+  transition: all 0.5s;
 }
 
-/* .banner button {
-  padding: 12px 36px;
-  border-radius: var(--border-radius);
-  box-shadow: 0 2px 4px 0 rgba(252, 71, 31, 0.3);
-  background: var(--color-primary);
-  color: var(--color-white);
-  letter-spacing: 2px;
-  text-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.5s;
-} */
-
 .banner button:hover {
-  /*background: var(--background-color-btn-hover);*/
-  box-shadow: 1px 2px 5px var(--color-secondary);
-  animation: botaoPiscar 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  border: 3px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 0.5rem var(--color-secondary);
+  color: var(--color-white);
+  text-shadow: 0 0 0.1rem var(--color-secondary);
 }
 
 /* Footer */
@@ -246,6 +246,10 @@
     display: none;
   }
 
+  .banner {
+    left: 20%;
+  }
+
   /* Footer */
   #footer img {
     width: 90px;
@@ -259,6 +263,10 @@
     letter-spacing: 1.5px;
   }
 
+  .banner {
+    left: 25%;
+  }
+
   /* Footer */
   #footer img {
     width: 100px;
@@ -270,5 +278,38 @@
   /* Header */
   .nav-menu {
     gap: 4em;
+  }
+
+  .banner {
+    left: 30%;
+    gap: 2em;
+  }
+
+  .banner h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--color-white);
+    text-shadow: 0.3rem 0.4rem 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .banner p {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0.1rem 0.2rem 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .banner button {
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
   }
 }
