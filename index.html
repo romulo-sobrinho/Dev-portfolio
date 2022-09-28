@@ -7,6 +7,8 @@
   <meta name="description" content="Site portifólio para vagas de emprego front-end developer">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- CSS Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/rss-apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/rss-favicon-32x32.png">
@@ -39,6 +41,13 @@
         <li><a href="#portfolio">Portifólio</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
+      <div class="icon">
+        <input type="checkbox" name="change-theme" id="change-theme">
+        <label for="change-theme">
+          <i class="bi bi-sun"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
       <div class="menu-hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -52,149 +61,7 @@
   </footer>
 
 
-
-  <section id="inicio" class="sessao-inicio">
-    <!-- <div class="img-wrapper">
-      <img src="./images/background.jpg" alt="Imagem do background do portifólio">
-    </div> -->
-
-    <div class="container-inicio">   
-      <header class="header">
-        <div class="container-header">
-          <img src="./images/logo2.png" alt="Imagem da logo do portilólio Fullstack developer">
-          <nav>
-            <a href="https://www.linkedin.com/in/romulo-sobrinho/" target="_blank">Linkedin</a>
-            <a href="https://github.com/romulo-sobrinho" target="_blank">Github</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#projetos">Projetos</a>
-          </nav>
-        </div>
-      </header>
-    
-      <main class="main">
-       
-      </main>
-    </div>
-  </section>
-
-  <section id="tecnologias" class="sessao sessao-tecnologias">
-    <header class="HeaderTitle sessao-header">
-      <h2>Tecnologias</h2>
-    </header>
-
-    <main class="main">
-      <div class="tecnologias">
-        <div class="card-tec">
-          <img src="./images/tecnologias/nodejs.png" alt="">
-          <div class="card-tec-info">
-            <h3>node js</h3>
-            <p>Cria aplicações utilizando Express, Template Engine, como por exemplo uma API RESTful</p>
-          </div>
-        </div>
-        <div class="card-tec">
-          <img src="./images/tecnologias/mongodb.png" alt="">
-          <div class="card-tec-info">
-            <h3>mongo db</h3>
-            <p>É um banco de dados não relacional - "NoSQL" - para construção de aplicações mais complexas</p>
-          </div>
-        </div>
-        <div class="card-tec">
-          <img src="./images/tecnologias/html.png" alt="">
-          <div class="card-tec-info">
-            <h3>html</h3>
-            <p>HTML (Linguagem de Marcação de HiperTexto) - Define o significado e a estrutura do conteúdo do projeto</p>
-          </div>
-        </div>
-        <div class="card-tec">
-          <img src="./images/tecnologias/css.png" alt="">
-          <div class="card-tec-info">
-            <h3>css</h3>
-            <p>CSS para dar estilo e design de alto nível ao projeto, utilizando flexbox, grid, animações e muito mais</p>
-          </div>
-        </div>
-        <div class="card-tec">
-          <img src="./images/tecnologias/javascript.png" alt="">
-          <div class="card-tec-info">
-            <h3>javascript</h3>
-            <p>Criação de sistemas profissionais, englobando domínio em orientação a objetos, filter, map, reducer, promises</p>
-          </div>
-        </div>
-        <div class="card-tec">
-          <img src="./images/tecnologias/bootstrap.png" alt="">
-          <div class="card-tec-info">
-            <h3>bootstrap</h3>
-            <p>Auxilia na criação de páginas web, tornando o processo de desenvolvimento mais rápido e ágil</p>
-          </div>
-        </div>
-      </div>
-    </main>
-  </section>
-
-  <section id="projetos" class="sessao sessao-projetos">
-    <header class="HeaderTitle sessao-header">
-      <h2>Projetos</h2>
-    </header>
-
-    <main class="main">
-      <div class="projetos">
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="./images/projetos/portifólio2.PNG" alt="Imagem do projeto de portifólio">
-          </div>
-          <div class="card-info">
-            <h3>Portifólio</h3>
-            <a href="https://github.com/romulo-sobrinho/portifolio" target="_blank"><button>Saiba mais</button></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="./images/projetos/APIRESTful.PNG" alt="Imagem da APIRESTful">
-          </div>
-          <div class="card-info">
-            <h3>APIRESTful</h3>
-            <a href="https://github.com/romulo-sobrinho/CRUD---API-RESTful---Node-JS-Express-MongoDB" target="_blank"><button>Saiba mais</button></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="./images/projetos/mercado-totalville.gif" alt="Imagem do projeto Mercado Total Ville">
-          </div>
-          <div class="card-info">
-            <h3>Mercado Total Ville</h3>
-            <a href="https://github.com/romulo-sobrinho/mercado-total-ville" target="_blank"><button>Saiba mais</button></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="./images/projetos/vira-lataflix.gif" alt="Imagem do projeto Vira-LataFlix">
-          </div>
-          <div class="card-info">
-            <h3>Vira-LataFlix</h3>
-            <a href="https://github.com/romulo-sobrinho/Vira-lataflix" target="_blank"><button>Saiba mais</button></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="./images/projetos/conversor-moeda2.PNG" alt="Imagem do projeto de conversão de real em dólar">
-          </div>
-          <div class="card-info">
-            <h3>Conversor moeda</h3>
-            <a href="https://github.com/romulo-sobrinho/Conversor-moeda" target="_blank"><button>Saiba mais</button></a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="./images/projetos/audio-player2.PNG" alt="Imagem do projeto de um controlador de audio">
-          </div>
-          <div class="card-info">
-            <h3>Audio-player</h3>
-            <a href="https://github.com/romulo-sobrinho/audio-player-JS" target="_blank"><button>Saiba mais</button></a>
-          </div>
-        </div>
-      </div>
-    </main>
-  </section>
-
+  <script src="./scripts/dark-theme.js"></script>
   <script src="./scripts/menu.js"></script>
 </body>
 </html>
