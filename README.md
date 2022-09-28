@@ -1,4 +1,4 @@
-![front-end developer logo](https://user-images.githubusercontent.com/68918326/192400488-c3b4119a-4282-4bea-87ed-607c6f526eda.PNG)
+![front-end developer logo](https://user-images.githubusercontent.com/68918326/192657225-1d8069c0-808a-4853-b131-d2122cd94bfd.PNG)
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>
@@ -20,7 +20,6 @@
 
 
 ## Features
-
   ✔️ Desenvolvimento mobile-first <br>
   ✔️ Site responsivo para celulares, tablets, desktop e grandes telas com o auxílio de @media queries <br>
   ✔️ Utilização correta das metatags do HTML5 <br>
