@@ -7,7 +7,7 @@
 
 <h1 align="center">Portifólio Pessoal</h1>
 <br>
-<h2 align="center"><a href="https://romulo-sobrinho.github.io/portifolio/" target="_blank">Clique aqui e acesse o preview web</a></h2>
+<h2 align="center"><a href="https://romulo-sobrinho.github.io/Dev-portfolio/" target="_blank">Clique aqui e acesse o preview web</a></h2>
 <br>
 
 <p align="center">Portifólio pessoal onde recrutadores poderão encontrar dados de contato além de informações sobre projetos desenvolvidos na área de desenvolvimento web</p>
