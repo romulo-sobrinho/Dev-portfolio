@@ -17,13 +17,15 @@
   --color-quaternary: #000;
   --color-text-banner: #fff;
   --color-bg1: #fcfcfc;
-  --color-bg2: #e5e5e5;
+  --color-bg2: #cccccc;
+  --color-bg3: #fff;
   /* --color-gray: #5d5d5d; */
   --background-dark-primary: #31333b;
   --background-dark-primary2: #313131;
   --background-dark-secondary: #3d3e42;
   --background-dark-secondary2: #3d3d3d;
-  --gradient-primary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
+  --gradient-primary: linear-gradient(30deg, #1f95fd 0, #4fe8e4 100%);
+  --gradient-secondary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
   --box-shadow: 10px 10px 25px 1px #C0C5CE;
   --border-radius: 8px;
 }
@@ -35,6 +37,7 @@
   --color-quaternary: #fff;
   --color-bg1: #31333b;
   --color-bg2: #3d3e42;
+  --color-bg3: #000;
 }
 
 .dark-mode #img-wrapper img {
@@ -42,7 +45,7 @@
 }
 
 .dark-mode .navigation {
-  box-shadow: 0 -0.1rem -0.2rem var(--color-primary);
+  box-shadow: 0 0.05rem 0.2rem var(--color-primary);
 }
 
 .dark-mode .navigation .bi-sun {
@@ -114,7 +117,7 @@
 }
 
 .navigation .bi-moon {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   display: none;
 }
 
@@ -219,6 +222,55 @@
   transition: all 0.5s;
 }
 
+/* Skills-information */
+#skills-information {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-bg1);
+}
+
+#skills-information h2 {
+  color: var(--color-quaternary);
+  padding: 2em 0;
+  text-align: center;
+  text-shadow: 0.1rem 0.2rem 4px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 0 2em 2em;
+}
+
+.skill {
+  width: 150px;
+  height: 150px;
+  background-color: var(--color-bg2);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 10px 1px var(--color-secondary);
+  margin-bottom: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-grow: 1;
+}
+
+.skill img {
+  height: 60px;
+}
+
+.skill h4 {
+  color: var(--color-quaternary);
+}
+
 /* Footer */
 #footer {
   width: 100%;
@@ -227,7 +279,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5em;
-  background-color: var(--color-bg1);
+  background-color: var(--color-bg3);
 }
 
 #footer img {
@@ -309,10 +361,15 @@
 
   .banner button:hover {
     border: 3px solid var(--color-secondary);
-    background-color: var(--color-secondary);
+    background: var(--gradient-secondary);
     box-shadow: 0 0 0.5rem var(--color-secondary);
     color: var(--color-tertiary);
     text-shadow: 0 0 0.1rem var(--color-secondary);
+  }
+
+  /* Skills-information */
+  .skill:hover {
+    background: var(--gradient-primary);
   }
 
   /* Footer */
