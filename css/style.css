@@ -11,6 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
+  --box-shadow: 10px 10px 25px 1px #C0C5CE;
+  --border-radius: 8px;
   --color-primary: #1f95fd;
   --color-secondary: #4fe8e4;
   --color-tertiary: #fff;
@@ -19,15 +21,14 @@
   --color-bg1: #fcfcfc;
   --color-bg2: #cccccc;
   --color-bg3: #fff;
+  --gradient-primary: linear-gradient(30deg, #1f95fd 0, #4fe8e4 100%);
+  --gradient-secondary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
+
   /* --color-gray: #5d5d5d; */
   --background-dark-primary: #31333b;
   --background-dark-primary2: #313131;
   --background-dark-secondary: #3d3e42;
   --background-dark-secondary2: #3d3d3d;
-  --gradient-primary: linear-gradient(30deg, #1f95fd 0, #4fe8e4 100%);
-  --gradient-secondary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
-  --box-shadow: 10px 10px 25px 1px #C0C5CE;
-  --border-radius: 8px;
 }
 
 
@@ -271,6 +272,45 @@
   color: var(--color-quaternary);
 }
 
+/* Projects information */
+#projects-information {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-bg2);
+}
+
+#projects-information h2 {
+  color: var(--color-quaternary);
+  padding: 2em 0;
+  text-align: center;
+  text-shadow: 0.1rem 0.2rem 4px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+.projects-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.projects-menu button {
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  border: 3px solid var(--color-secondary);
+  background: var(--gradient-secondary);
+  box-shadow: 0 0 0.5rem var(--color-secondary);
+  color: var(--color-tertiary);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 0.1rem var(--color-secondary);
+  transition: all 0.5s;
+  margin-bottom: 2em;
+}
+
 /* Footer */
 #footer {
   width: 100%;
@@ -370,6 +410,25 @@
   /* Skills-information */
   .skill:hover {
     background: var(--gradient-primary);
+    transform: translateY(-7px);
+  }
+
+  /* Projects information */
+  .projects-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .projects-menu button:hover {
+    box-shadow: 0 0.1rem 1rem 0.1rem var(--color-secondary);
+    transform: translateY(-7px)
+  }
+
+  .projects-menu button:active {
+    transform: translateY(-1px)
   }
 
   /* Footer */
