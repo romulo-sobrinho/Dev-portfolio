@@ -25,9 +25,7 @@
   --gradient-secondary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
 
   /* --color-gray: #5d5d5d; */
-  --background-dark-primary: #31333b;
   --background-dark-primary2: #313131;
-  --background-dark-secondary: #3d3e42;
   --background-dark-secondary2: #3d3d3d;
 }
 
@@ -66,6 +64,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Montserrat";
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -84,15 +83,18 @@
 }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  background-color: var(--color-bg1);
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+.navigation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
-  background-color: var(--color-bg1);
-  box-shadow: 0 0.1rem 0.5rem #ccc;
+  padding: 1em;
 }
 
 .navigation img {
@@ -253,7 +255,7 @@
   height: 150px;
   background-color: var(--color-bg2);
   border-radius: var(--border-radius);
-  box-shadow: 0px 0px 10px 1px var(--color-secondary);
+  box-shadow: 0px 0px 5px 1px var(--color-secondary);
   margin-bottom: 2em;
   padding: 1em;
   display: flex;
@@ -275,7 +277,7 @@
 /* Projects information */
 #projects-information {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-color: var(--color-bg2);
 }
 
@@ -289,10 +291,19 @@
 
 .projects-menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.projects-menu-container {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1em;
+  margin-bottom: 2em;
 }
 
 .projects-menu button {
@@ -308,7 +319,35 @@
   letter-spacing: 2px;
   text-shadow: 0 0 0.1rem var(--color-secondary);
   transition: all 0.5s;
-  margin-bottom: 2em;
+}
+
+.projects-all {}
+
+#projects-front {
+  display: none;
+  width: 100%;
+  height: 55%;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  padding: 0 2em;
+}
+
+#projects-front.active {
+  display: flex;
+}
+
+.project {
+  width: 80%;
+  height: 100%;
+  margin: 0 5px;
+  transition: all 1s;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Footer */
@@ -326,7 +365,7 @@
   width: 80px;
 }
 
-
+/* Keyframes */
 @keyframes decrease {
   0% {
     transform: scale(1.3);
@@ -347,14 +386,10 @@
   }
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
 
   /* Header */
-  .navigation {
-    justify-content: space-between;
-    padding: 1em 4em;
-  }
-
   .nav-menu {
     background-color: none;
     position: static;
@@ -372,6 +407,38 @@
 
   .banner {
     left: 20%;
+  }
+
+  /* Projects information */
+  #projects-front {
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: unset;
+    padding: 0;
+  }
+
+  .project {
+    width: 20%;
+    height: 100%;
+    margin: 0 5px;
+    transition: all 1s;
+  }
+
+  .project:first-child {
+    width: 35%;
+  }
+
+  .projects:hover .project:first-child {
+    width: 20%;
+  }
+
+  .project:hover {
+    width: 35%;
+  }
+
+  .project:first-child:hover {
+    width: 35% !important;
   }
 
   /* Footer */
@@ -414,14 +481,6 @@
   }
 
   /* Projects information */
-  .projects-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-  }
-
   .projects-menu button:hover {
     box-shadow: 0 0.1rem 1rem 0.1rem var(--color-secondary);
     transform: translateY(-7px)
@@ -440,6 +499,11 @@
 @media (min-width: 1200px) {
 
   /* Header */
+  .navigation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .nav-menu {
     gap: 4em;
   }
@@ -459,5 +523,43 @@
 
   .banner button {
     font-size: 1.2em;
+  }
+
+  /* Skills-information */
+  .skills {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Projects information */
+  .projects-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #projects-front {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  /* Header */
+  .navigation-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* Skills-information */
+  .skills {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* Projects information */
+  .projects-menu {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
