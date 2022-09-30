@@ -149,7 +149,8 @@
 
 .nav-menu a {
   color: var(--color-quaternary);
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   transition: all 0.5s;
 }
 
@@ -387,7 +388,7 @@
   font-size: 1.2em;
 }
 
-.project-info button {
+.project-info a {
   padding: 4px 8px;
   border-radius: var(--border-radius);
   background-color: transparent;
@@ -503,10 +504,6 @@
     font-size: 1.5em;
   }
 
-  .nav-menu a {
-    letter-spacing: 1.5px;
-  }
-
   .nav-menu a:hover {
     color: var(--color-primary);
   }
@@ -539,7 +536,7 @@
     transform: translateY(-1px)
   }
 
-  .project-info button:hover {
+  .project-info a:hover {
     color: var(--color-secondary);
     box-shadow: 0 0 0.5rem 0.1rem var(--color-secondary);
   }
