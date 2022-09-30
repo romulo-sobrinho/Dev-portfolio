@@ -224,6 +224,20 @@
   transition: all 0.5s;
 }
 
+.banner .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.banner i {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: var(--color-primary);
+}
+
 /* Skills-information */
 #skills-information {
   width: 100%;
@@ -362,7 +376,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 65%, transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 85%, transparent);
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -373,10 +387,11 @@
 
 .project-info h1 {
   font-size: 1.2em;
+  letter-spacing: 1.2px;
 }
 
 .project-info a {
-  padding: 4px 8px;
+  padding: 6px 12px;
   border-radius: var(--border-radius);
   background-color: transparent;
   color: var(--color-primary);
@@ -447,6 +462,10 @@
     left: 20%;
   }
 
+  .banner .social {
+    gap: 2em;
+  }
+
   /* Projects information */
   .projects {
     justify-content: center;
@@ -505,6 +524,15 @@
     text-shadow: 0 0 0.1rem var(--color-secondary);
   }
 
+  .banner i {
+    font-size: 1.5em;
+  }
+
+  .banner i:hover {
+    color: var(--color-secondary);
+  }
+
+
   /* Skills-information */
   .skill:hover {
     background: var(--gradient-primary);
@@ -559,6 +587,10 @@
 
   .banner button {
     font-size: 1.2em;
+  }
+
+  .banner i {
+    font-size: 2em;
   }
 
   /* Skills-information */
