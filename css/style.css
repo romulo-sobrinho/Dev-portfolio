@@ -338,10 +338,11 @@
 }
 
 .project {
-  width: 80%;
+  min-width: 80%;
   height: 100%;
   margin: 0 5px;
   transition: all 1s;
+  box-shadow: 0px 0px 5px 1px #fff;
 }
 
 .project img {
@@ -419,26 +420,26 @@
   }
 
   .project {
-    width: 20%;
+    min-width: 20%;
     height: 100%;
     margin: 0 5px;
     transition: all 1s;
   }
 
   .project:first-child {
-    width: 35%;
+    min-width: 35%;
   }
 
   .projects:hover .project:first-child {
-    width: 20%;
+    min-width: 20%;
   }
 
   .project:hover {
-    width: 35%;
+    min-width: 35%;
   }
 
   .project:first-child:hover {
-    width: 35% !important;
+    min-width: 35% !important;
   }
 
   /* Footer */
