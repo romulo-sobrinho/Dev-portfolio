@@ -1,4 +1,4 @@
-![front-end developer logo](https://user-images.githubusercontent.com/68918326/192667351-4f4bc6f3-7b7e-40f2-b7dc-c62095b3078d.PNG)
+![logo](https://user-images.githubusercontent.com/68918326/193332767-8248edfa-cf76-4032-8eed-05bf3037838c.PNG)
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>
