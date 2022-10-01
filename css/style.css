@@ -241,9 +241,9 @@
 /* About */
 #about {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--color-bg2);
-  /* padding: 0 2em 4em 2em; */
+  padding: 0 2em 4em;
 }
 
 #about h2 {
@@ -252,6 +252,26 @@
   text-align: center;
   text-shadow: 0.1rem 0.2rem 4px rgba(0, 0, 0, 0.4);
   font-weight: 500;
+}
+
+.about-information {
+  color: var(--color-quaternary);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.about-information h3 {
+  font-weight: 500;
+  text-shadow: 0.1rem 0.2rem 4px rgba(0, 0, 0, 0.4);
+}
+
+.about-information a {
+  color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Skills-information */
@@ -361,7 +381,7 @@
 }
 
 .projects::-webkit-scrollbar-thumb {
-  background-color: #5b5b5b;
+  background-color: var(--color-primary);
   border-radius: 5px;
 }
 
@@ -567,6 +587,11 @@
     filter: drop-shadow(0 0 0.5rem var(--color-secondary));
   }
 
+  /* About */
+  .about-information a:hover {
+    color: var(--color-secondary);
+  }
+
   /* Skills-information */
   .skill:hover {
     background: var(--gradient-primary);
@@ -633,6 +658,14 @@
     font-size: 2em;
   }
 
+  /* About */
+  .about-information {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+
   /* Skills-information */
   .skills {
     max-width: 1200px;
@@ -659,6 +692,12 @@
     margin: 0 auto;
   }
 
+  /* About */
+  .about-information {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   /* Skills-information */
   .skills {
     max-width: 1600px;
@@ -667,6 +706,11 @@
 
   /* Projects information */
   .projects-menu {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .projects {
     max-width: 1600px;
     margin: 0 auto;
   }
