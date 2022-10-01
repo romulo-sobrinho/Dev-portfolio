@@ -33,7 +33,11 @@
     
 ## Preview
 
-![Portfolio](https://user-images.githubusercontent.com/68918326/192667202-669a3ebd-d7d9-4433-af7a-28ebd2cdaf38.PNG)
+![PortfolioLight](https://user-images.githubusercontent.com/68918326/193429462-7e85c4b7-9c71-4903-95f2-c596b99e72c3.PNG)
+
+<br>
+
+![PortfolioDark](https://user-images.githubusercontent.com/68918326/193429470-8207a9c4-cf81-4c06-bb40-e3ec7c6b54ce.PNG)
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>
