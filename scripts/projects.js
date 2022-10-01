@@ -7,10 +7,10 @@ const projectsBack = document.querySelector('#projects-back');
 
 frontBtn.addEventListener('click', () => {
   projectsFront.style.display = 'flex';
-  projectsBack.classList.remove('active');
+  projectsBack.style.display = 'none';
 })
 
 backBtn.addEventListener('click', () => {
   projectsFront.style.display = 'none';
-  projectsBack.classList.add('active');
+  projectsBack.style.display = 'flex';
 })

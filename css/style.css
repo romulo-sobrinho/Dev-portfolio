@@ -353,8 +353,8 @@
   display: flex;
 }
 
-#projects-back.active {
-  display: flex;
+#projects-back {
+  display: none;
 }
 
 .project {
