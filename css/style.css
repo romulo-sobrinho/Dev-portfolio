@@ -18,8 +18,8 @@
   --color-tertiary: #fff;
   --color-quaternary: #000;
   --color-text-banner: #fff;
-  --color-bg1: #fcfcfc;
-  --color-bg2: #cccccc;
+  --color-bg1: #fff;
+  --color-bg2: #ebebeb;
   --color-bg3: #fff;
   --gradient-primary: linear-gradient(30deg, #1f95fd 0, #4fe8e4 100%);
   --gradient-secondary: linear-gradient(30deg, #34bbff 0, #28eedb 100%);
@@ -456,7 +456,7 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: var(--color-bg3);
+  background-color: var(--color-bg1);
 }
 
 #footer img {
