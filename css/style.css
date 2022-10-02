@@ -463,6 +463,24 @@
   width: 80px;
 }
 
+
+
+
+
+
+
+/* Scroll Effects */
+.init-hidden {
+  /* opacity: 0; */
+  transform: scale(0);
+  transition: transform 0.5s linear;
+}
+
+.init-hidden-off {
+  /* opacity: 1; */
+  transform: scale(1);
+}
+
 /* Keyframes */
 @keyframes decrease {
   0% {
@@ -662,7 +680,7 @@
   .about-information {
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
   }
 
