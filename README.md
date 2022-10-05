@@ -1,7 +1,7 @@
 ![logo](https://user-images.githubusercontent.com/68918326/193332767-8248edfa-cf76-4032-8eed-05bf3037838c.PNG)
 
 <hr>
-<h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>
+<h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
 <hr>
 
 
@@ -28,9 +28,9 @@
   ✔️ Utilização de variáveis na pseudo classe root no CSS <br>
   ✔️ Posicionamento e alinhamento de elementos com flex box <br>
   ✔️ Uso de animações com @keyframes e transições no CSS <br>
+  ✔️ Manipulação do DOM (Document Object Model) <br>
 
   
-    
 ## Preview
 
 ![PortfolioLight](https://user-images.githubusercontent.com/68918326/193429462-7e85c4b7-9c71-4903-95f2-c596b99e72c3.PNG)
@@ -40,5 +40,5 @@
 ![PortfolioDark](https://user-images.githubusercontent.com/68918326/193429470-8207a9c4-cf81-4c06-bb40-e3ec7c6b54ce.PNG)
 
 <hr>
-<h3 align="center">🎖️PROJETO EM CONSTRUÇÂO🎖️</h3>
+<h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
 <hr>
