@@ -462,12 +462,6 @@
   width: 80px;
 }
 
-
-
-
-
-
-
 /* Scroll Effects */
 .init-hidden {
   opacity: 0;
@@ -537,7 +531,7 @@
   }
 
   .project {
-    min-width: 20%;
+    min-width: 16%;
     height: 100%;
     margin: 0 5px;
     transition: all 1s;
@@ -552,7 +546,7 @@
   } */
 
   .project:hover {
-    min-width: 35%;
+    min-width: 30%;
   }
 
   .project:hover .project-info {
